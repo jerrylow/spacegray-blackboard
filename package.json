@@ -1,0 +1,17 @@
+{
+  "name": "spacegray-blackboard",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "Spacegray Blackboard Syntax Theme for Atom",
+  "keywords": [
+    "blackboard",
+    "dark",
+    "spacegray",
+    "syntax"
+  ],
+  "repository": "https://github.com/jerrylow/spacegray-blackboard",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
