@@ -1,0 +1,56 @@
+.editor-colors {
+  background-color: @background;
+}
+
+atom-text-editor,
+:host {
+  color: @off-white;
+
+  .invisible-character {
+    font-weight: normal !important;
+    font-style: normal !important;
+    color: @white;
+    opacity: 0.15;
+  }
+
+  .indent-guide {
+    display: inline-block;
+    box-shadow: inset 1px 0 #FF6400;
+    opacity:0.4
+  }
+
+  .gutter {
+    color: @light-grey;
+    background-color: @background;
+  }
+
+  .wrap-guide {
+    color: @white;
+    opacity: 0.1;
+  }
+
+  .selection .region {
+    background-color: @selection;
+  }
+
+  &::shadow .highlight {
+    &.find-result .region,
+    &.current-result .region {
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.editor {
+  &.is-focused {
+    .cursor {
+      border-color: rgba(255, 255, 255, 0.5);
+      border-width: 2px;
+    }
+
+    .line-number.cursor-line-no-selection,
+    .line.cursor-line {
+      background-color: rgba(255, 255, 255, 0.06);
+    }
+  }
+}
