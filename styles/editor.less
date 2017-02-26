@@ -1,9 +1,5 @@
-.editor-colors {
+atom-text-editor {
   background-color: @background;
-}
-
-atom-text-editor,
-:host {
   color: @off-white;
 
   .invisible-character {
@@ -33,7 +29,7 @@ atom-text-editor,
     background-color: @selection;
   }
 
-  &::shadow .highlight {
+  .highlight {
     &.find-result .region,
     &.current-result .region {
       border-color: rgba(255, 255, 255, 0.5);
